@@ -4,220 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Htet Aung Lynn | Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --accent-color: #2563eb;
-            --border-color: #e2e8f0;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding-bottom: 2.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        h1 {
-            font-size: 2.25rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 1.25rem;
-        }
-
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.6rem 1.2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: background-color 0.2s;
-        }
-
-        .btn-primary {
-            background-color: var(--accent-color);
-            color: white;
-        }
-
-        .btn-secondary {
-            background-color: #e2e8f0;
-            color: var(--text-primary);
-        }
-
-        .btn:hover {
-            opacity: 0.9;
-        }
-
-        section {
-            margin-top: 2.5rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-            border-left: 4px solid var(--accent-color);
-            padding-left: 0.5rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.25rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        ul {
-            list-style-type: square;
-            padding-left: 1.2rem;
-            color: var(--text-secondary);
-        }
-
-        li {
-            margin-bottom: 0.4rem;
-        }
-
-        .project-title {
-            font-size: 1.15rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<div class="container">
-
-    <!-- Header Section -->
-    <header>
-        <h1>Htet Aung Lynn</h1>
-        <p class="subtitle">Radio Network Optimization | Data Analyst | Machine Learning Engineer</p>
-        <div class="links">
-            <a href="https://www.linkedin.com/in/htetaglynn" target="_blank" class="btn btn-primary">LinkedIn Profile</a>
-            <a href="https://github.com/htetaunglynn94/Portfolio-Projects" target="_blank" class="btn btn-secondary">GitHub Portfolio</a>
-        </div>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="logo">Htet Aung Lynn</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm Htet Aung Lynn</h1>
+        <p class="tagline">Data Analyst | Machine Learning Engineer | Radio Network Optimization Specialist</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/htetaglynn?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/htetaunglynn94/Portfolio-Projects.git" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub Projects</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <div class="card">
-            <p>Passionate professional with expertise bridging Telecom Engineering and Modern Data Science. Specializing in <strong>Radio Network Optimization (RNO)</strong>, data analytics pipeline development, and predictive <strong>Machine Learning models</strong> to optimize network performance, extract actionable insights, and automate decision-making processes.</p>
-        </div>
+        <hr class="divider">
+        <p>
+            I am a technical professional specializing at the intersection of **Radio Network Optimization**, **Data Analytics**, and **Machine Learning Engineering**. With a strong engineering foundation, I leverage predictive modeling, statistical analysis, and automated workflows to optimize cellular network performance and extract actionable business insights from high-dimensional datasets.
+        </p>
     </section>
 
-    <!-- Technical Skills -->
-    <section>
-        <h2>Core Expertise</h2>
-        <div class="skills-grid">
-            <div class="card">
-                <h3>Radio Network Optimization</h3>
-                <ul>
-                    <li>KPI Analysis & Coverage Optimization</li>
-                    <li>Drive Test Data Processing</li>
-                    <li>Cellular Network Planning (4G/5G)</li>
-                </ul>
+    <!-- Experiences Section -->
+    <section id="experience" class="section">
+        <h2>Experiences</h2>
+        <hr class="divider">
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Machine Learning Engineer / Data Analyst</h3>
+                <span class="date">Present</span>
+                <p>Developing data pipelines, statistical models, and predictive algorithms to solve complex data-driven challenges.</p>
             </div>
-            <div class="card">
-                <h3>Data Analytics</h3>
-                <ul>
-                    <li>Python (Pandas, NumPy) & SQL</li>
-                    <li>Data Visualization & Dashboarding</li>
-                    <li>Exploratory Data Analysis (EDA)</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Machine Learning</h3>
-                <ul>
-                    <li>Supervised & Unsupervised Learning</li>
-                    <li>Scikit-Learn, Predictive Modeling</li>
-                    <li>Feature Engineering & Model Evaluation</li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experience Overview -->
-    <section>
-        <h2>Professional Background</h2>
-        <div class="card">
-            <div class="project-title">Radio Network Optimization & Analytics</div>
-            <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Cross-domain experience applying data analytics and ML techniques to telecommunications challenges and data-driven projects.</p>
-            <ul>
-                <li>Analyzed complex network performance metrics to identify and resolve coverage/capacity bottlenecks.</li>
-                <li>Leveraged data processing pipelines to automate routine KPI reporting and anomaly detection.</li>
-                <li>Developed predictive models to forecast network traffic and user behavior.</li>
-            </ul>
+            <div class="timeline-item">
+                <h3>Radio Network Optimization Engineer</h3>
+                <span class="date">Previous Role</span>
+                <p>Analyzed KPI performance metrics, conducted drive-test analyses, and optimized radio coverage/capacity for cellular networks.</p>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section>
+    <section id="projects" class="section">
         <h2>Featured Projects</h2>
-        <div class="card">
-            <div class="project-title">Portfolio Projects Repository</div>
-            <p style="color: var(--text-secondary); margin-bottom: 0.8rem;">
-                A curated collection of data analysis, network performance, and machine learning projects hosted on GitHub.
-            </p>
-            <a href="https://github.com/htetaunglynn94/Portfolio-Projects" target="_blank" class="btn btn-primary">Explore Projects on GitHub</a>
+        <hr class="divider">
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <h3>ML & Predictive Analytics</h3>
+                <p>Machine learning models built to tackle domain-specific problems using classification, regression, and data preprocessing pipelines.</p>
+                <div class="tags">
+                    <span>Python</span><span>Scikit-Learn</span><span>Pandas</span>
+                </div>
+                <a href="https://github.com/htetaunglynn94/Portfolio-Projects.git" target="_blank" class="project-link">View Repository <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
+            <div class="project-card">
+                <h3>Telecom / Radio Network Optimization Data Tools</h3>
+                <p>Data visualization dashboards and automated scripts for analyzing cellular network KPIs and performance metrics.</p>
+                <div class="tags">
+                    <span>Python</span><span>Data Visualization</span><span>Telecom KPI</span>
+                </div>
+                <a href="https://github.com/htetaunglynn94/Portfolio-Projects.git" target="_blank" class="project-link">View Repository <i class="fas fa-external-link-alt"></i></a>
+            </div>
+
         </div>
+    </section>
+
+    <!-- Certificates & Achievements Section -->
+    <section id="certificates" class="section">
+        <h2>Certificates & Achievements</h2>
+        <hr class="divider">
+        <ul class="cert-list">
+            <li><i class="fas fa-certificate"></i> <strong>Machine Learning Specialization</strong> — Standard Professional Certification</li>
+            <li><i class="fas fa-certificate"></i> <strong>Data Analysis & Visualization Professional Certificate</strong></li>
+            <li><i class="fas fa-award"></i> <strong>Radio Network Optimization & Engineering Credentials</strong></li>
+        </ul>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Htet Aung Lynn. Hosted on GitHub Pages.</p>
     </footer>
-
-</div>
 
 </body>
 </html>
