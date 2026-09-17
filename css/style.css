@@ -294,6 +294,82 @@ nav a.active {
 
 
 /* ==============================
+   SOCIAL / CONTACT LINKS
+================================ */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        color 0.3s,
+        background 0.3s;
+}
+
+.social-link:hover {
+    color: var(--text);
+    border-color: var(--accent);
+    background: rgba(56, 189, 248, 0.06);
+    transform: translateY(-3px);
+}
+
+.social-logo {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    flex-shrink: 0;
+    color: var(--text);
+}
+
+.linkedin-logo {
+    background: #0a66c2;
+}
+
+.github-logo {
+    background: #24292f;
+}
+
+.whatsapp-logo {
+    background: #25d366;
+}
+
+.line-logo {
+    background: #06c755;
+    font-size: 8px;
+    letter-spacing: -0.5px;
+}
+
+.gmail-logo {
+    background: #ea4335;
+    font-size: 15px;
+}
+
+
+/* ==============================
    SECTIONS
 ================================ */
 
