@@ -278,11 +278,11 @@ nav a.active {
     transform: translateY(-2px);
 }
 
-/* .secondary-btn {
+.secondary-btn {
     border: 1px solid var(--border);
 
     color: var(--text);
-} */
+}
 
 .secondary-btn:hover {
     border-color: var(--accent);
