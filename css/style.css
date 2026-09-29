@@ -400,6 +400,175 @@ nav a.active {
 }
 
 
+
+/* ==============================
+   ACADEMIC BACKGROUND
+================================ */
+
+.education-section .education-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.education-section .education-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+/* UNIVERSITY LOGO */
+
+.education-logo {
+    width: 110px;
+    height: 110px;
+    flex: 0 0 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+.education-logo a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* DEGREE DETAILS */
+
+.education-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.education-content h3 {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+.education-degree {
+    margin: 0 0 18px;
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* GPA */
+
+.education-gpa {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.education-gpa span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.education-gpa strong {
+    padding: 5px 12px;
+    color: var(--accent);
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 7px;
+    font-size: 0.95rem;
+}
+
+/* SUBJECTS */
+
+.education-subjects h4 {
+    margin: 0 0 12px;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.subject-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 22px;
+}
+
+.subject-list span {
+    padding: 7px 12px;
+    color: var(--text-secondary);
+    background: rgba(148, 163, 184, 0.08);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    font-size: 0.85rem;
+    transition: color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.subject-list span:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* UNIVERSITY WEBSITE LINK */
+
+.education-link {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.education-link:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 650px) {
+    .education-section .education-card {
+        flex-direction: column;
+        padding: 22px;
+        gap: 20px;
+    }
+
+    .education-logo {
+        width: 85px;
+        height: 85px;
+        flex-basis: 85px;
+    }
+
+    .education-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .subject-list {
+        gap: 7px;
+    }
+}
+
+
 /* ==============================
    SECTIONS
 ================================ */
