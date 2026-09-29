@@ -33,8 +33,8 @@ This website can be deployed using GitHub Pages.
 
 ## Author
 
-Your Name
+Htet Aung Lynn
 
 ---
 
-© 2026 Your Name
+© 2026 Htet Aung Lynn
